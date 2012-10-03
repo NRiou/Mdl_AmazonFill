@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Mdl
+ * @package     Mdl_AmazonFill
+ * @copyright   Copyright (c) 2012 Nicolas RIOU (http://www.nicolas-riou.fr)
+ */
+-->
+<config>
+    <modules>
+        <Mdl_AmazonFill>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml />
+            </depends>
+        </Mdl_AmazonFill>
+    </modules>
+</config> 

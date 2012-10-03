@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Mdl
+ * @package     Mdl_AmazonFill
+ * @copyright   Copyright (c) 2012 Nicolas RIOU (http://www.nicolas-riou.fr)
+ */
+-->
+<config>
+    <modules>
+        <Mdl_AmazonFill>
+             <version>0.1.0</version>
+        </Mdl_AmazonFill>
+    </modules>
+    <stores>
+        <admin>
+            <design>
+                <package>
+                    <name>default</name>
+                </package>
+                <theme>
+                    <default>amazonfill</default>
+                </theme>
+            </design>
+        </admin>
+    </stores>
+    <admin>
+        <routers>
+            <Mdl_AmazonFill>
+                <use>admin</use>
+                <args>
+                    <module>Mdl_AmazonFill</module>
+                    <frontName>amazonfill</frontName>
+                </args>
+            </Mdl_AmazonFill>
+        </routers>
+    </admin>
+    <global>
+        <helpers>
+            <amazonfill>
+                <class>Mdl_AmazonFill_Helper</class>
+            </amazonfill>
+        </helpers>
+		<blocks>
+            <adminhtml>
+				<rewrite>
+				    <catalog_product_edit>Mdl_AmazonFill_Block_Adminhtml_Catalog_Product_Edit</catalog_product_edit>
+				</rewrite>
+			</adminhtml>
+        </blocks>
+    </global>
+</config>
